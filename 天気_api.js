@@ -11,11 +11,10 @@ async function fetchWeather() {
         const forecast = data.forecasts[0]; // Today's forecast
 
         weatherDiv.innerHTML = `
-            <p><strong>日付:</strong> ${forecast.date}</p>
-            <p><strong>天気:</strong> ${forecast.telop}</p>
-            
-            <img src="${forecast.image.url}" alt="${forecast.telop}" style="max-width: 100px;">
-        `;
+         日付: ${forecast.date} <br> 天気: ${forecast.telop}
+    <br>
+    <img src="${forecast.image.url}" style="max-width:60px;">
+`;
     } catch (error) {
         console.error('エラー:', error);
         weatherDiv.innerHTML = '<p id="error">天気情報の取得に失敗しました。</p>';
