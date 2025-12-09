@@ -1,5 +1,5 @@
 #weather {
-    position: absolute; /* Position relative to the .content box */
-    top: 5px; /* Distance from the top inside the .content box */
-    right: 20px; /* Distance from the right inside the .content box */
+    position: absolute;
+    top: 5px; 
+    right: 20px;
 }
